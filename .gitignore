@@ -1,0 +1,7 @@
+# Compiled programs and debug symbols
+build/
+*.out
+*.dSYM/
+
+# macOS
+.DS_Store
