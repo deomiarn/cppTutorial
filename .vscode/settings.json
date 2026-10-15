@@ -1,5 +1,9 @@
 {
     "C_Cpp.default.compilerPath": "/usr/bin/clang++",
     "C_Cpp.default.cppStandard": "c++20",
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && mkdir -p build && clang++ -g -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -std=c++20 $fileName -o build/$fileNameWithoutExt.out && ./build/$fileNameWithoutExt.out"
+    },
+    "code-runner.runInTerminal": true
 }
