@@ -21,7 +21,7 @@
                 "-Wconversion", // Warn on implicit conversions that may lose data
                 "-Wsign-conversion", // Warn on implicit signed/unsigned conversions
                 "-std=c++20", // Use the C++20 standard
-                "${file}",
+                "${fileDirname}/*.cpp", // compile all .cpp files in the folder
                 "-o",
                 "${fileDirname}/build/${fileBasenameNoExtension}.out" // add ending to compiled files for gitignore
             ],
